@@ -21,6 +21,6 @@ const options = {
   }
 
   let neoBalance = $("balance-amount").text().trim();
-  fs.writeFileSync('data.json', JSON.stringify(data))
+  fs.writeFileSync('balance.text', neoBalance)
 
 })
