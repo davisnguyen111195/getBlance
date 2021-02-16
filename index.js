@@ -20,7 +20,7 @@ const options = {
     return error;
   }
 
-  let neoBalance = $("balance-amount").text().trim();
-  fs.writeFileSync('balance.text', neoBalance)
+  let neoBalance = $("balance-amount").text()
+  console.log(neoBalance)
 
 })
