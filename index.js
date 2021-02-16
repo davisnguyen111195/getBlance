@@ -12,7 +12,7 @@ const options = {
   },
 };
  
-(async function crawler() {
+function crawler() {
   try {
     // Lấy dữ liệu từ trang crawl đã được parseDOM
     var $ = await rp(options);
@@ -23,4 +23,5 @@ const options = {
   let neoBalance = $("balance-amount").text()
   console.log(neoBalance)
 
-})
+}
+crawler()
