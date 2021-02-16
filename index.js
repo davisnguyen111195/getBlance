@@ -15,7 +15,7 @@ const options = {
 function crawler() {
   try {
     // Lấy dữ liệu từ trang crawl đã được parseDOM
-    var $ = await rp(options);
+    var $ = rp(options);
   } catch (error) {
     return error;
   }
